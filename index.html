@@ -10,41 +10,58 @@
     <title>Who is Susie Phipps?</title>
     <!-- 1 -->
     <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="css/app.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/responsive-voice.js"></script>
     <!-- 2 -->
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-    <div id='timeline-embed' style="width: 800px; height: 650px"></div>
+    <div id='timeline-embed' style="width: 800px; height: 500px"></div>
     <script>
-    var enabled = true;
+    var enabled = false;
+    var disableKey = true;
     var options = {
         hash_bookmark: false,
         initial_zoom: 4,
-        timenav_position: "bottom",
-        marker_width_min: 300
+        timenav_position: "bottom"
     }
     timeline = new TL.Timeline('timeline-embed',
         'js/timeline.json', options);
 
+    $('')
+
     // keyboard shortcuts for accessibility
-    timeline.on("dataloaded", function(data) {
-        $(document).bind('keyup', function(e) {
-            key = e.keyCode;
-            if (key == 39) {
-                //right arrow key - go to next slide
-                timeline.goToNext();
-                console.log(timeline);
-            } else if (key == 37) {
-                //left arrow key - go to previous slide
-                timeline.goToPrev();
-            }
-        });
+    $(document).bind('keyup', function(e) {
+        key = e.keyCode;
+        if (key == 39 && disableKey==false) {
+            //right arrow key - go to next slide
+            timeline.goToNext();
+            console.log(timeline);
+        } else if (key == 37 && disableKey==false) {
+            //left arrow key - go to previous slide
+            timeline.goToPrev();
+        } else if (key == 82) {
+            //reload app - r key
+            location.reload();
+        } else if (key == 83) {
+            //Start App - s key
+            intro();
+        }
     });
+
+    function intro() {
+        $('.intro').hide();
+        enabled = true;
+        disableKey=false;
+    }
     </script>
 </head>
 
 <body>
+    <div class="intro">
+        <button class="intro_Button" onclick="intro()">
+            <h1><b>PRESS S</b> or Click here to START</h1></button>
+    </div>
 </body>
 
 </html>
