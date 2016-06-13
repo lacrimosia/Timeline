@@ -21,6 +21,7 @@
     <script>
     var enabled = false;
     var disableKey = true;
+    var count = 0;
     var options = {
         hash_bookmark: false,
         initial_zoom: 4,
@@ -37,7 +38,6 @@
         if (key == 39 && disableKey==false) {
             //right arrow key - go to next slide
             timeline.goToNext();
-            console.log(timeline);
         } else if (key == 37 && disableKey==false) {
             //left arrow key - go to previous slide
             timeline.goToPrev();
