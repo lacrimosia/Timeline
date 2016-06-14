@@ -66,7 +66,7 @@ function getCount() {
 
 
 function read() {
-    if (getCount() == 0 && disableKey == false) {
+    if (getCount() == 0 && disableKey == false && sound==true) {
         responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
     } else if(sound == true) {
         responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
