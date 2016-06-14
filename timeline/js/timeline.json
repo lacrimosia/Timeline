@@ -2,12 +2,16 @@
     "title": {
         "media": {
           "url": "./images/phipps.jpg",
-          "caption": "Susie Phipps",
-          "credit": "French Creoles/ <a href='http://www.frenchcreoles.com/CreoleCulture/creoleexperience/Creoles%20We%20Are%202010.html'>Image</a>"
+          "caption": "",
+          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>"
         },
         "text": {
+          "title": "Susie Phipps",
           "headline": "Who is Susie Phipps?",
           "text": "<p>Omi and Winant use the case of Susie Phipps to bring to light the complicated nature of identifying race based on shifting historical contexts, hard-fast laws, and cultural attitudes.</p>"
+        },
+        "background": {
+          "url": "./images/phipps.jpg"
         }
     },
     "events": [
@@ -15,7 +19,7 @@
         "media": {
           "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg",
           "caption": "The One Drop Rule information",
-          "credit": "Pinterest/ <a href='https://www.pinterest.com/pin/313492824038178710/'>Image</a>",
+          "credit": "Credits: Pinterest/ <a href='https://www.pinterest.com/pin/313492824038178710/'>Image</a>",
           "thumbnail": "./images/phipps.jpg"
         },
         "start_date": {
@@ -24,13 +28,16 @@
         "text": {
           "headline": "Louisiana Hypo-descent law passes",
           "text": "<p>Louisiana Hypo-descent law passes, which is based on colonial era \"One Drop Rule\" in which anyone with 1/32 or more African ancestry is considered \"Black.\"</p>"
+        },
+        "background": {
+          "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg"
         }
       },
       {
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "",
-          "credit": "<a href=\"http://unidiscmusic.com\">Source Here</a>"
+          "credit": "Credits: <a href=\"http://unidiscmusic.com\">Source Here</a>"
         },
         "start_date": {
           "year": "1977"
@@ -44,7 +51,7 @@
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "Information here",
-          "credit": "Source here"
+          "credit": "Credits: Source here"
         },
         "start_date": {
           "year": "1982"
@@ -61,7 +68,7 @@
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "Information here",
-          "credit": "source here"
+          "credit": "Credits: source here"
         },
         "start_date": {
           "year": "1983"
@@ -75,7 +82,7 @@
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "information here...",
-          "credit": "Source here"
+          "credit": "Credits: Source here"
         },
         "start_date": {
           "year": "1983"
@@ -89,7 +96,7 @@
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "information here...",
-          "credit": "Source here"
+          "credit": "Credits: Source here"
         },
         "start_date": {
           "year": "1985"
@@ -103,7 +110,7 @@
         "media": {
           "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
           "caption": "information here...",
-          "credit": "Source here"
+          "credit": "Credits: Source here"
         },
         "start_date": {
           "year": "1986"
