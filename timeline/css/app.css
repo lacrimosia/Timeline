@@ -1,47 +1,88 @@
-.intro{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 805px;
-	height: 505px;
-	background: rgba(0,0,0,0.5);
-	z-index: 50;
+html,
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.intro_Button{
-	opacity: 1 !important;
-	position: relative;
-	top: 150px;
-	left: 220px;
-	width: 350px;
-	height: 150px;
-	background: #4C4C4C;
-	border: none;
+.intro {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 505px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
 }
 
-.intro_Button h1{
-	font-size: 3em;
-	color: #E2E2E2;
+.intro_Button {
+    opacity: 1 !important;
+    position: relative;
+    top: 150px;
+    left: 220px;
+    width: 350px;
+    height: 150px;
+    background: #4C4C4C;
+    border: none;
+}
+
+.intro_Button h1 {
+    font-size: 3em;
+    color: #E2E2E2;
+}
+
+
+/* header bar */
+
+.header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98 */
+    background: #1b1f4e;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719', GradientType=1);
+    /* IE6-9 */
+    width: 800px;
+    height: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    color: #ffffff;
+    z-index: 60;
+}
+
+.titles{
+	float: left;
+	margin-top: -15px;
+}
+
+.menu{
+	float: right;
 }
 
 /* button for marker text */
-.tl-timemarker-content-container{
-	background: #ED5901 !important;
+
+.tl-timemarker-content-container {
+    /* background: #ED5901 !important; */
 }
 
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{
-	background: #AA0CE9 !important;
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+    background: #AA0CE9 !important;
 }
 
-.tl-headline.tl-headline-fadeout{
-background: none !important;
+.tl-headline.tl-headline-fadeout {
+    background: none !important;
 }
 
-.tl-headline.tl-headline-fadeout:after{
-background: none !important;
+.tl-headline.tl-headline-fadeout:after {
+    background: none !important;
 }
+
 
 /* nav bar timeline */
-.tl-timenav{
-	/*background: #1B1F4E !important; */
+
+.tl-timenav {
+    /*background: #1B1F4E !important; */
 }

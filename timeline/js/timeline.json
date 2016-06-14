@@ -34,9 +34,9 @@
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
+          "url": "https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg",
           "caption": "",
-          "credit": "Credits: <a href=\"http://unidiscmusic.com\">Source Here</a>"
+          "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>"
         },
         "start_date": {
           "year": "1977"
@@ -44,13 +44,15 @@
         "text": {
           "headline": "Passport Denied",
           "text": "Phipps checks \"White\" on her passport application, and she was then denied a passport because her birth certificate indicated 'Colored' for one of her parents."
+        },
+        "background":{
+          "url": "https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg"
         }
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
-          "caption": "Information here",
-          "credit": "Credits: Source here"
+          "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg",
+          "credit": "Credits: <a href=\"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg\">Image</a>"
         },
         "start_date": {
           "year": "1982"
@@ -61,13 +63,15 @@
         "text": {
           "headline": "Racial Classification",
           "text": "Susie Phipps decided to sue to challenge her racial classification as something other than \"white.\" A Tulane professor studying the case states that most whites have 1/20 African-American blood."
+        },
+        "background":{
+          "url":"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
         }
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
-          "caption": "Information here",
-          "credit": "Credits: source here"
+          "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg",
+          "credit": "Credits: <a href=\"http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg\">Image</a>"
         },
         "start_date": {
           "year": "1983"
@@ -75,6 +79,9 @@
         "text": {
           "headline": "The Great Discovery",
           "text": "Phipps's great-great-great-great grandmother [Margarita] was revealed to have been a slave. In a 1983 interview, Phipps was quoted that she came to believe that \"Margarita had been dark rather than black.\""
+        },
+        "background":{
+          "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
         }
       },
       {
