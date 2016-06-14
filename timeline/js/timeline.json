@@ -18,7 +18,6 @@
       {
         "media": {
           "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg",
-          "caption": "The One Drop Rule information",
           "credit": "Credits: Pinterest/ <a href='https://www.pinterest.com/pin/313492824038178710/'>Image</a>",
           "thumbnail": "./images/phipps.jpg"
         },
@@ -27,7 +26,7 @@
         },
         "text": {
           "headline": "Louisiana Hypo-descent law passes",
-          "text": "<p>Louisiana Hypo-descent law passes, which is based on colonial era \"One Drop Rule\" in which anyone with 1/32 or more African ancestry is considered \"Black.\"</p>"
+          "text": "Louisiana Hypo-descent law passes, which is based on colonial era \"One Drop Rule\" in which anyone with 1/32 or more African ancestry is considered \"Black.\""
         },
         "background": {
           "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg"

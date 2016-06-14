@@ -17,19 +17,27 @@
     <script src="js/timeline.js"></script>
     <!-- 2 -->
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-   <!-- <h1>Susie Phipps Timeline</h1><h5>1970-1985</h5> -->
+    <!-- <h1>Susie Phipps Timeline</h1><h5>1970-1985</h5> -->
     <div id='timeline-embed' style="width: 800px; height: 500px"></div>
     <script>
-    var enabled = false;
-    var disableKey = true;
-    var count = 0;
     var options = {
         hash_bookmark: false,
         initial_zoom: 4,
-        timenav_position: "bottom"
+        timenav_position: "bottom",
+        optimal_tick_width: 50
     }
-   var timeline = new TL.Timeline('timeline-embed',
+    var timeline = new TL.Timeline('timeline-embed',
         'js/timeline.json', options);
+
+    timeline.on("nav_next", function(data) {
+        getCount();
+        read();
+    });
+
+    timeline.on("nav_previous", function(data) {
+        getCount();
+        read();
+    });
     </script>
 </head>
 

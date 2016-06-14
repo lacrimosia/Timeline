@@ -23,3 +23,25 @@
 	font-size: 3em;
 	color: #E2E2E2;
 }
+
+/* button for marker text */
+.tl-timemarker-content-container{
+	background: #ED5901 !important;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{
+	background: #AA0CE9 !important;
+}
+
+.tl-headline.tl-headline-fadeout{
+background: none !important;
+}
+
+.tl-headline.tl-headline-fadeout:after{
+background: none !important;
+}
+
+/* nav bar timeline */
+.tl-timenav{
+	/*background: #1B1F4E !important; */
+}
