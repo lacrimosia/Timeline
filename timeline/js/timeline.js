@@ -29,17 +29,22 @@ $(document).bind('keyup', function(e) {
         read(); // enable speech
 
     } else if (key == 82) {
-        //reload app - r key
-        location.reload();
+        location.reload(); //reload app - r key
     } else if (key == 83) {
-        //Start App - s key
-        intro();
+        intro(); //Start App - s key
+    }else if (key == 65 && disableKey == false){
+        toggleSound(); // A key - toggle Sound
     }
+});
+
+$('.tl-timemarker-timespan').click(function() {
+    alert("hello");
 });
 
 
 function intro() {
     $('.intro').hide();
+    read();
     enabled = true;
     disableKey = false;
 }
@@ -62,9 +67,20 @@ function getCount() {
 
 function read() {
     if (getCount() == 0 && disableKey == false) {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + ". " + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
-    } else {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + ". " + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
+        responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
+    } else if(sound == true) {
+        responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
     }
 
+}
+
+function toggleSound() {
+    // turn sound on/off with keystroke
+    // check if sound is playing and turn on
+    sound=!sound; //toggle sound state
+    if(sound==false){
+        responsiveVoice.cancel();
+    }else{
+        read();
+    }
 }
