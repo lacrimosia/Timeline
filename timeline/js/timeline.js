@@ -7,7 +7,7 @@ var sound = true; // Toggle sound on and off from button and keyboard
 
 // information from timeline slides data 
 //  count += 1;
-// slide heading - console.log('timeline slide heading', timeline.getSlide(count));
+
 // unique id - console.log('timelines unique id', timeline.getSlide(1).data.unique_id);
 // current_id - console.log('timeline', timeline.current_id);
 // slides - console.log('timeline', timeline._storyslider._slides);
@@ -68,15 +68,15 @@ function getCount() {
 function read() {
     if (getCount() == 0 && disableKey == false && sound==true) {
         responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
-    } else if(sound == true) {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
+    } else if(sound == true && getCount() != 0) {
+        responsiveVoice.speak(timeline.getData(getCount()).text.headline + 'In '+ timeline.getData(getCount()).start_date.data.year +","+ timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
     }
 
 }
 
 function toggleSound() {
     // turn sound on/off with keystroke
-    // check if sound is playing and turn on
+    // check if sound is playing and turn ona
     sound=!sound; //toggle sound state
     if(sound==false){
         responsiveVoice.cancel();
