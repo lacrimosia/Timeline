@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/responsive-voice.js"></script>
+    <script src="js/timeline.js"></script>
     <!-- 2 -->
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
    <!-- <h1>Susie Phipps Timeline</h1><h5>1970-1985</h5> -->
@@ -27,32 +28,8 @@
         initial_zoom: 4,
         timenav_position: "bottom"
     }
-    timeline = new TL.Timeline('timeline-embed',
+   var timeline = new TL.Timeline('timeline-embed',
         'js/timeline.json', options);
-
-    // keyboard shortcuts for accessibility
-    $(document).bind('keyup', function(e) {
-        key = e.keyCode;
-        if (key == 39 && disableKey==false) {
-            //right arrow key - go to next slide
-            timeline.goToNext();
-        } else if (key == 37 && disableKey==false) {
-            //left arrow key - go to previous slide
-            timeline.goToPrev();
-        } else if (key == 82) {
-            //reload app - r key
-            location.reload();
-        } else if (key == 83) {
-            //Start App - s key
-            intro();
-        }
-    });
-
-    function intro() {
-        $('.intro').hide();
-        enabled = true;
-        disableKey=false;
-    }
     </script>
 </head>
 
