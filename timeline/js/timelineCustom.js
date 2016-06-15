@@ -1,9 +1,14 @@
+// Timeline JS3 Custom interaction
+// 6/2016
+
 var current = 0; // set the current to first slide
 var voiceType = "UK English Male"; // Male voice for audio
 var voiceRate = 0.9; // voice rate for the audio
 var enabled = false; // hide intro screen
 var disableKey = true; // disable keyboard until intro screen is hidden
 var sound = true; // Toggle sound on and off from button and keyboard
+var soundOn = "<i class='fa fa-volume-up'></i>"; // change to sound on icon
+var soundOff = "<i class='fa fa-volume-off'></i>"; // change to sound off icon
 
 // information from timeline slides data 
 //  count += 1;
@@ -33,11 +38,11 @@ $(document).bind('keyup', function(e) {
     } else if (key == 83) {
         intro(); //Start App - s key
         read();
-        $('.sound').html('<i class="fa fa-volume-up"></i>'); // init icon 
+        $('.sound').html(soundOn); // init icon 
     } else if (key == 65 && disableKey == false) {
         // A key - toggle Sound
         // toggles sound and changes icon based on whether sound is on or off
-        toggleSound() ? $('.sound').html('<i class="fa fa-volume-up"></i>') : $('.sound').html('<i class="fa fa-volume-off"></i>');
+        toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
     }
 });
 
@@ -45,13 +50,13 @@ $(document).bind('keyup', function(e) {
 $('.intro_Button').click(function() {
     intro(); //Start App - s key
     read();
-    $('.sound').html('<i class="fa fa-volume-up"></i>'); // init icon 
+    $('.sound').html(soundOn); // init icon 
 });
 
 // toggle sound button
 $('.sound').click(function() {
     // toggles sound and changes icon based on whether sound is on or off
-    toggleSound() ? $('.sound').html('<i class="fa fa-volume-up"></i>') : $('.sound').html('<i class="fa fa-volume-off"></i>');
+    toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
 });
 
 
