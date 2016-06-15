@@ -53,6 +53,16 @@ $('.intro_Button').click(function() {
     $('.sound').html(soundOn); // init icon 
 });
 
+// reload app 
+$('.reload').click(function(){
+    location.reload();
+});
+
+// reload app 
+$('.help').click(function(){
+    
+});
+
 // toggle sound button
 $('.sound').click(function() {
     // toggles sound and changes icon based on whether sound is on or off
