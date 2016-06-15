@@ -2,6 +2,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif, verdana !important;
 }
 
 .intro {
@@ -65,11 +66,13 @@ body {
 /* button for marker text */
 
 .tl-timemarker-content-container {
-    /* background: #ED5901 !important; */
+    background: #393F7D !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
 }
 
 /* color of selected markers and timeline background bar */
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container, .tl-timeaxis-background {
+.tl-timemarker.tl-timemarker-active, .tl-timeaxis-background {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98;wmst */
 background: #1b1f4e; /* Old browsers */
 background: -moz-linear-gradient(left,  #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%); /* FF3.6-15 */
@@ -88,6 +91,10 @@ font-size: 16px !important;
     background: none !important;
 }
 
+/* date heading */
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
+	font-size: 24px !important;
+}
 
 /* nav bar timeline */
 

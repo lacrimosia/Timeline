@@ -1,12 +1,17 @@
 {
     "title": {
+        "media": {
+          "url": "./images/phipps.jpg",
+          "caption": "",
+          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>"
+        },
         "text": {
           "title": "Susie Phipps",
           "headline": "Who is Susie Phipps?",
           "text": "Omi and Winant use the case of Susie Phipps to bring to light the complicated nature of identifying race based on shifting historical contexts, hard-fast laws, and cultural attitudes."
         },
         "background": {
-          "url": "./images/phipps.jpg"
+          "url": "./images/historic.jpg"
         }
     },
     "events": [
@@ -91,6 +96,9 @@
         "text": {
           "headline": "Standing for your beliefs",
           "text": "Phipps claimed she held no grudge against black people and rather she only stood up for what she believed: she was white. If her birth certificate didn't get corrected, descendants might misunderstand their own racial lineage."
+        },
+        "background": {
+          "url": "./images/historic.jpg"
         }
       },
       {
@@ -105,6 +113,9 @@
         "text": {
           "headline": "Phipps testifies",
           "text": "Phipps testifies that \"this classification came as a shock, since she had always thought she was White, had lived as White, had twice married as White.\""
+        },
+        "background": {
+          "url": "./images/historic.jpg"
         }
       },
       {
@@ -119,6 +130,9 @@
         "text": {
           "headline": "US Supreme court",
           "text": "U.S. Supreme Court upholds the decision to refuse to hear a case exposing Louisiana's racial classification criteria."
+        },
+        "background": {
+          "url": "./images/historic.jpg"
         }
       }
     ]

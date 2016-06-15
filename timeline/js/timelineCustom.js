@@ -60,7 +60,6 @@ $('.reload').click(function(){
 
 // reload app 
 $('.help').click(function(){
-    
 });
 
 // toggle sound button
@@ -86,10 +85,6 @@ timeline.on("nav_previous", function(data) {
 timeline.on("change", function(data) {
     getCount();
     read();
-});
-
-$(".tl-timenav-slider-background").click(function() {
-    alert($(this).attr('class'));
 });
 
 function intro() {
