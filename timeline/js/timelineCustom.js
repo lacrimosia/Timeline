@@ -33,15 +33,26 @@ $(document).bind('keyup', function(e) {
     } else if (key == 83) {
         intro(); //Start App - s key
         read();
-    }else if (key == 65 && disableKey == false){
+    } else if (key == 65 && disableKey == false) {
         toggleSound(); // A key - toggle Sound
     }
 });
 
-$('.tl-timemarker-timespan').click(function() {
-    alert("hello");
+
+// click events
+timeline.on("nav_next", function(data) {
+    getCount();
+    read();
 });
 
+timeline.on("nav_previous", function(data) {
+    getCount();
+    read();
+});
+
+$(this).on("click", function() {
+    console.log($(this).attr("class"));
+});
 
 function intro() {
     $('.intro').hide();
@@ -67,10 +78,10 @@ function getCount() {
 
 
 function read() {
-    if (getCount() == 0 && disableKey == false && sound==true) {
+    if (getCount() == 0 && disableKey == false && sound == true) {
         responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
-    } else if(sound == true && getCount() != 0) {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + 'In '+ timeline.getData(getCount()).start_date.data.year +","+ timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
+    } else if (sound == true && getCount() != 0) {
+        responsiveVoice.speak(timeline.getData(getCount()).text.headline + 'In ' + timeline.getData(getCount()).start_date.data.year + "," + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
     }
 
 }
@@ -78,10 +89,10 @@ function read() {
 function toggleSound() {
     // turn sound on/off with keystroke
     // check if sound is playing and turn ona
-    sound=!sound; //toggle sound state
-    if(sound==false){
+    sound = !sound; //toggle sound state
+    if (sound == false) {
         responsiveVoice.cancel();
-    }else{
+    } else {
         read();
     }
 }
