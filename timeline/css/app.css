@@ -26,31 +26,30 @@ body {
     cursor: pointer;
 }
 
+.intro_Button:hover {
+   background: #636363;
+}
+
 .intro_Button h1 {
     font-size: 3em;
     color: #E2E2E2;
+}
+
+/* hide timeline background container */
+.tl-timenav-slider-background{
+ /*display: none !important;*/
 }
 
 
 /* header bar */
 
 .header {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98 */
-    background: #1b1f4e;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719', GradientType=1);
-    /* IE6-9 */
+    background: #222222;
     width: 800px;
     height: 30px;
     font-family: sans-serif;
     position: absolute;
-    color: #ffffff;
+    color: #f1f1f1;
     z-index: 60;
 }
 
@@ -70,7 +69,7 @@ body {
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-    background: #AA0CE9 !important;
+    background: #ED5901 !important;
 }
 
 .tl-headline.tl-headline-fadeout {
@@ -81,16 +80,15 @@ body {
     background: none !important;
 }
 
-
 /* nav bar timeline */
 
 .tl-timenav {
-    /*background: #1B1F4E !important; */
+    background: #222222 !important;
 }
 
 /* buttons */
 .btn{
-	background: #1B1F4E;
+	background: #D4001D;
 	border: none;
 	margin-right: 1px;
 	color: #ffffff;
@@ -100,5 +98,10 @@ body {
 }
 
 .btn:hover{
-background: #393F7D;
+background: #ED5901;
+}
+
+/* Slide title */
+.tl-medium .tl-text h2.tl-headline-title, .tl-medium .tl-text h2.tl-headline{
+/* color: #1B1F4E !important; */
 }

@@ -33,25 +33,48 @@ $(document).bind('keyup', function(e) {
     } else if (key == 83) {
         intro(); //Start App - s key
         read();
+        $('.sound').html('<i class="fa fa-volume-up"></i>'); // init icon 
     } else if (key == 65 && disableKey == false) {
-        toggleSound(); // A key - toggle Sound
+        // A key - toggle Sound
+        // toggles sound and changes icon based on whether sound is on or off
+        toggleSound() ? $('.sound').html('<i class="fa fa-volume-up"></i>') : $('.sound').html('<i class="fa fa-volume-off"></i>');
     }
 });
 
+// start sound on intro
+$('.intro_Button').click(function() {
+    intro(); //Start App - s key
+    read();
+    $('.sound').html('<i class="fa fa-volume-up"></i>'); // init icon 
+});
 
-// click events
+// toggle sound button
+$('.sound').click(function() {
+    // toggles sound and changes icon based on whether sound is on or off
+    toggleSound() ? $('.sound').html('<i class="fa fa-volume-up"></i>') : $('.sound').html('<i class="fa fa-volume-off"></i>');
+});
+
+
+// read when user clicks next
 timeline.on("nav_next", function(data) {
     getCount();
     read();
 });
 
+// read when user clicks previous
 timeline.on("nav_previous", function(data) {
     getCount();
     read();
 });
 
-$(this).on("click", function() {
-    console.log($(this).attr("class"));
+// read on slide change
+timeline.on("change", function(data) {
+    getCount();
+    read();
+});
+
+$(".tl-timenav-slider-background").click(function() {
+    alert($(this).attr('class'));
 });
 
 function intro() {
@@ -95,4 +118,6 @@ function toggleSound() {
     } else {
         read();
     }
+    console.log('toggleSound()', sound);
+    return sound;
 }
