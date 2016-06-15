@@ -9,7 +9,7 @@ body {
     top: 0px;
     left: 0px;
     width: 800px;
-    height: 505px;
+    height: 531px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 100000;
 }
@@ -23,6 +23,7 @@ body {
     height: 150px;
     background: #4C4C4C;
     border: none;
+    cursor: pointer;
 }
 
 .intro_Button h1 {
@@ -85,4 +86,19 @@ body {
 
 .tl-timenav {
     /*background: #1B1F4E !important; */
+}
+
+/* buttons */
+.btn{
+	background: #1B1F4E;
+	border: none;
+	margin-right: 1px;
+	color: #ffffff;
+	display: inline;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.btn:hover{
+background: #393F7D;
 }

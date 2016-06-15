@@ -10,7 +10,8 @@
     <title>Who is Susie Phipps?</title>
     <!-- 1 -->
     <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/responsive-voice.js"></script>
@@ -18,16 +19,7 @@
     <!-- 2 -->
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     <!-- <h1>Susie Phipps Timeline</h1><h5>1970-1985</h5> -->
-    <div class="header">
-        <div class="titles">
-            <h3>Who is Susie Phipps? - Interactive Timeline</h3>
-        </div>
-        <div class="menu">
-        <button class="sound">sound</button>
-            <button class="reload">reload</button>
-            <button class="help">Help</button>
-        </div>
-    </div>
+
     <div id='timeline-embed' style="width: 800px; height: 500px"></div>
     <script>
     var options = {
@@ -48,14 +40,29 @@
         getCount();
         read();
     });
+
+    $(this).on("click",function() {
+        console.log($(this).attr("class"));
+    });
     </script>
 </head>
 
 <body>
+    <div class="header">
+        <div class="titles">
+            <h5>Who is Susie Phipps? - Interactive Timeline</h5>
+        </div>
+        <div class="menu">
+            <button class="sound btn"><i class="fa fa-volume-off"></i> Sound</button>
+            <button class="reload btn"><i class="fa fa-refresh"></i> Reload</button>
+            <button class="help btn"><i class="fa fa-question-circle"></i> Help</button>
+        </div>
+    </div>
     <div class="intro">
         <button class="intro_Button" onclick="intro()">
             <h1><b>PRESS S</b> or Click here to START</h1></button>
     </div>
+    
 </body>
 
 </html>

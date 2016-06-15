@@ -32,6 +32,7 @@ $(document).bind('keyup', function(e) {
         location.reload(); //reload app - r key
     } else if (key == 83) {
         intro(); //Start App - s key
+        read();
     }else if (key == 65 && disableKey == false){
         toggleSound(); // A key - toggle Sound
     }
