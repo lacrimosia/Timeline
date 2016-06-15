@@ -1,17 +1,12 @@
 {
     "title": {
-        "media": {
-          "url": "./images/phipps.jpg",
-          "caption": "",
-          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>"
-        },
         "text": {
           "title": "Susie Phipps",
           "headline": "Who is Susie Phipps?",
           "text": "Omi and Winant use the case of Susie Phipps to bring to light the complicated nature of identifying race based on shifting historical contexts, hard-fast laws, and cultural attitudes."
         },
         "background": {
-          "url": "./images/historic.jpg"
+          "url": "./images/phipps.jpg"
         }
     },
     "events": [

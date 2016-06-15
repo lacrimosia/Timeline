@@ -68,8 +68,16 @@ body {
     /* background: #ED5901 !important; */
 }
 
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-    background: #ED5901 !important;
+/* color of selected markers and timeline background bar */
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container, .tl-timeaxis-background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98;wmst */
+background: #1b1f4e; /* Old browsers */
+background: -moz-linear-gradient(left,  #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719',GradientType=1 ); /* IE6-9 */
+color: #ffffff !important;
+font-size: 16px !important;
 }
 
 .tl-headline.tl-headline-fadeout {
@@ -79,6 +87,7 @@ body {
 .tl-headline.tl-headline-fadeout:after {
     background: none !important;
 }
+
 
 /* nav bar timeline */
 
