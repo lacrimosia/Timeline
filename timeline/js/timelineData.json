@@ -17,9 +17,9 @@
     "events": [
       {
         "media": {
-          "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg",
-          "credit": "Credits: Pinterest/ <a href='https://www.pinterest.com/pin/313492824038178710/'>Image</a>",
-          "thumbnail": "./images/phipps.jpg"
+          "url": "./images/mixed-race.png",
+          "credit": "Credits: Gnostic Warrior/ <a href='http://gnosticwarrior.com/wp-content/uploads/2015/03/Mixed-Races-2.png'>Image</a>",
+          "thumbnail": "./images/mixed-race.png"
         },
         "start_date": {
           "year": "1970"
@@ -29,7 +29,7 @@
           "text": "Louisiana Hypo-descent law passes, which is based on colonial era \"One Drop Rule\" in which anyone with 1/32 or more African ancestry is considered \"Black.\""
         },
         "background": {
-          "url": "https://s-media-cache-ak0.pinimg.com/736x/01/2f/bb/012fbb705188c54bf651e24269a2ec7f.jpg"
+          "url": "./images/mixed-race.png"
         }
       },
       {
@@ -86,9 +86,8 @@
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
-          "caption": "information here...",
-          "credit": "Credits: Source here"
+          "url": "./images/speak-up.jpg",
+          "credit": "Credits: Dailycal/ <a href=\"http://www.dailycal.org/2014/10/02/upholding-fsm-legacy-guide/\">Image</a>"
         },
         "start_date": {
           "year": "1983"
@@ -98,14 +97,13 @@
           "text": "Phipps claimed she held no grudge against black people and rather she only stood up for what she believed: she was white. If her birth certificate didn't get corrected, descendants might misunderstand their own racial lineage."
         },
         "background": {
-          "url": "./images/historic.jpg"
+          "url": "./images/speak-up.jpg"
         }
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
-          "caption": "information here...",
-          "credit": "Credits: Source here"
+          "url": "./images/testify.png",
+          "credit": "Credits: JTB Law Firm <a href=\"http://jtblawfirm.com/the-difference/\">Image</a>"
         },
         "start_date": {
           "year": "1985"
@@ -115,14 +113,13 @@
           "text": "Phipps testifies that \"this classification came as a shock, since she had always thought she was White, had lived as White, had twice married as White.\""
         },
         "background": {
-          "url": "./images/historic.jpg"
+          "url": "./images/testify.png"
         }
       },
       {
         "media": {
-          "url": "http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png",
-          "caption": "information here...",
-          "credit": "Credits: Source here"
+          "url": "./images/supreme.jpg",
+          "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>"
         },
         "start_date": {
           "year": "1986"
@@ -132,7 +129,7 @@
           "text": "U.S. Supreme Court upholds the decision to refuse to hear a case exposing Louisiana's racial classification criteria."
         },
         "background": {
-          "url": "./images/historic.jpg"
+          "url": "./images/supreme.jpg"
         }
       }
     ]

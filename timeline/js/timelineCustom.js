@@ -42,7 +42,7 @@ $(document).bind('keyup', function(e) {
     } else if (key == 65 && disableKey == false) {
         // A key - toggle Sound
         // toggles sound and changes icon based on whether sound is on or off
-        toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
+        changeSoundIcon();
     }
 });
 
@@ -65,7 +65,7 @@ $('.help').click(function(){
 // toggle sound button
 $('.sound').click(function() {
     // toggles sound and changes icon based on whether sound is on or off
-    toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
+    changeSoundIcon();
 });
 
 
@@ -130,4 +130,8 @@ function toggleSound() {
     }
     console.log('toggleSound()', sound);
     return sound;
+}
+
+function changeSoundIcon(){
+    toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
 }
