@@ -5,7 +5,7 @@ body {
     font-family: sans-serif, verdana !important;
 }
 
-.intro, .help {
+.intro, .help_Menu {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -27,8 +27,71 @@ body {
     cursor: pointer;
 }
 
+.help_Button {
+    opacity: 1 !important;
+    position: relative;
+    top: -55px;
+    left: 396px;
+    width: 250px;
+    height: 75px;
+    background: #D4001D;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.keyboard_Div{
+	position: relative;
+	top: 50px;
+	left: 62px;
+	width: 650px;
+	height: 360px;
+	background: #353535;
+	border: 1px solid #A0A0A0;
+	opacity: 0.9;
+	padding: 10px;
+}
+
+.keyboard_Div ul li{
+	list-style: none;
+	color: #ffffff;
+	font-size: 1.3em;
+	margin-bottom: 6px;
+	margin-left: 35px;
+}
+
+.keyboard_Div h1{
+	text-align: center;
+	color: #ffffff;
+}
+
+.keyboard_Div h4{
+	text-align: left;
+	color: #ffffff;
+}
+
+.keyboard_Div p{
+	text-align: center;
+	color: #ffffff;
+}
+
+.help_Button:hover{
+	background: #ED5901;
+}
+
 .intro_Button:hover {
    background: #636363;
+}
+
+.keyButtons{
+	background: #111111;
+	border-radius: 6px;
+	border: 1px solid #A0A0A0;
+	width: 20px;
+	height: 10px;
+	padding: 5px;
+	font-size: 0.7em !important;
 }
 
 .intro_Button h1 {
@@ -109,7 +172,7 @@ font-size: 16px !important;
 	margin-right: 1px;
 	color: #ffffff;
 	display: inline;
-	padding: 5px;
+	padding: 5px 5px 7px 5px;
 	cursor: pointer;
 }
 

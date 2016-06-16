@@ -9,6 +9,11 @@ var disableKey = true; // disable keyboard until intro screen is hidden
 var sound = true; // Toggle sound on and off from button and keyboard
 var soundOn = "<i class='fa fa-volume-up'></i>"; // change to sound on icon
 var soundOff = "<i class='fa fa-volume-off'></i>"; // change to sound off icon
+var showHelp = false; // show help when clicked or key is pressed
+var openHelp = false; // whether help menu is open or closed
+
+// init
+init();
 
 // information from timeline slides data 
 //  count += 1;
@@ -43,23 +48,40 @@ $(document).bind('keyup', function(e) {
         // A key - toggle Sound
         // toggles sound and changes icon based on whether sound is on or off
         changeSoundIcon();
+    } else if (key == 72 && disableKey == false) {
+        // H key - Help Menu
+        // toggles sound and changes icon based on whether sound is on or off
+        openHelp = !openHelp;
+        if (openHelp == true) {
+            showHelpMenu();
+            $('.help_Button').html("Close");
+        }else{
+            closeHelpMenu();
+        }
     }
 });
 
 // start sound on intro
-$('.intro_Button').click(function() {
+$('.help_Button').click(function() {
     intro(); //Start App - s key
     read();
     $('.sound').html(soundOn); // init icon 
 });
 
 // reload app 
-$('.reload').click(function(){
+$('.reload').click(function() {
     location.reload();
 });
 
-// reload app 
-$('.help').click(function(){
+// help menu will show
+$('.help').click(function() {
+    showHelpMenu();
+    $('.help_Button').html("Close");
+});
+
+// close help menu
+$('.help_Button').click(function() {
+    closeHelpMenu();
 });
 
 // toggle sound button
@@ -88,7 +110,7 @@ timeline.on("change", function(data) {
 });
 
 function intro() {
-    $('.intro').hide();
+    $('.help_Menu').hide();
     read();
     enabled = true;
     disableKey = false;
@@ -132,6 +154,20 @@ function toggleSound() {
     return sound;
 }
 
-function changeSoundIcon(){
+function changeSoundIcon() {
     toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
+}
+
+function init() {
+    // $('.help_Menu').hide();
+}
+
+function showHelpMenu() {
+    $('.help_Menu').show().fadeIn();
+    responsiveVoice.cancel();
+}
+
+function closeHelpMenu() {
+    $('.help_Menu').hide().fadeOut();
+    read();
 }
