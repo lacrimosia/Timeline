@@ -54,7 +54,7 @@ $(document).bind('keyup', function(e) {
         openHelp = !openHelp;
         if (openHelp == true) {
             showHelpMenu();
-            $('.help_Button').html("Close");
+            $('.help_Button').html("Close <i class='fa fa-times'></i>");
         }else{
             closeHelpMenu();
         }
@@ -163,11 +163,11 @@ function init() {
 }
 
 function showHelpMenu() {
-    $('.help_Menu').show().fadeIn();
+    $('.help_Menu').show();
     responsiveVoice.cancel();
 }
 
 function closeHelpMenu() {
-    $('.help_Menu').hide().fadeOut();
+    $('.help_Menu').hide();
     read();
 }

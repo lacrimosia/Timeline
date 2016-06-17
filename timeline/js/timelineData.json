@@ -3,7 +3,8 @@
         "media": {
           "url": "./images/phipps.jpg",
           "caption": "",
-          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>"
+          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>",
+          "thumbnail": "./images/phipps.jpg"
         },
         "text": {
           "title": "Susie Phipps",
@@ -36,7 +37,8 @@
         "media": {
           "url": "./images/passport.jpg",
           "caption": "",
-          "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>"
+          "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>",
+          "thumbnail": "./images/passport.jpg"
         },
         "start_date": {
           "year": "1977"
@@ -52,7 +54,8 @@
       {
         "media": {
           "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg",
-          "credit": "Credits: <a href=\"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg\">Image</a>"
+          "credit": "Credits: <a href=\"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg\">Image</a>",
+          "thumbnail": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
         },
         "start_date": {
           "year": "1982"
@@ -71,7 +74,8 @@
       {
         "media": {
           "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg",
-          "credit": "Credits: <a href=\"http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg\">Image</a>"
+          "credit": "Credits: <a href=\"http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg\">Image</a>",
+          "thumbnail": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
         },
         "start_date": {
           "year": "1983"
@@ -87,7 +91,9 @@
       {
         "media": {
           "url": "./images/speak-up.jpg",
-          "credit": "Credits: Dailycal/ <a href=\"http://www.dailycal.org/2014/10/02/upholding-fsm-legacy-guide/\">Image</a>"
+          "credit": "Credits: Dailycal/ <a href=\"http://www.dailycal.org/2014/10/02/upholding-fsm-legacy-guide/\">Image</a>",
+          "thumbnail": "./images/speak-up.jpg"
+
         },
         "start_date": {
           "year": "1983"
@@ -103,7 +109,8 @@
       {
         "media": {
           "url": "./images/testify.png",
-          "credit": "Credits: JTB Law Firm <a href=\"http://jtblawfirm.com/the-difference/\">Image</a>"
+          "credit": "Credits: JTB Law Firm <a href=\"http://jtblawfirm.com/the-difference/\">Image</a>",
+          "thumbnail": "./images/testify.png"
         },
         "start_date": {
           "year": "1985"
@@ -119,7 +126,8 @@
       {
         "media": {
           "url": "./images/supreme.jpg",
-          "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>"
+          "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>",
+          "thumbnail": "./images/supreme.jpg"
         },
         "start_date": {
           "year": "1986"
