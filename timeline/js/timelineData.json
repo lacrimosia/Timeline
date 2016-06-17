@@ -34,7 +34,7 @@
       },
       {
         "media": {
-          "url": "https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg",
+          "url": "./images/passport.jpg",
           "caption": "",
           "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>"
         },
@@ -46,7 +46,7 @@
           "text": "Phipps checks \"White\" on her passport application, and she was then denied a passport because her birth certificate indicated 'Colored' for one of her parents."
         },
         "background":{
-          "url": "https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg"
+          "url": "./images/passport.jpg"
         }
       },
       {

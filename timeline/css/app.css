@@ -3,6 +3,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif, verdana !important;
+    color: #ffffff !important;
+}
+
+.tl-timeline{
+	position: relative;
+	top: 100px !important;
 }
 
 .intro, .help_Menu {
@@ -10,9 +16,13 @@ body {
     top: 0px;
     left: 0px;
     width: 800px;
-    height: 531px;
-    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    background: rgba(0, 0, 0, 0.6);
     z-index: 100000;
+}
+
+.tl-timeaxis-background{
+	background: #141414 !important;
 }
 
 .intro_Button {
@@ -30,7 +40,7 @@ body {
 .help_Button {
     opacity: 1 !important;
     position: relative;
-    top: -55px;
+    top: -5px;
     left: 396px;
     width: 250px;
     height: 75px;
@@ -43,7 +53,7 @@ body {
 
 .keyboard_Div{
 	position: relative;
-	top: 50px;
+	top: 108px;
 	left: 62px;
 	width: 650px;
 	height: 360px;
@@ -102,19 +112,36 @@ body {
 /* hide timeline background container */
 .tl-timenav-slider-background{
  /*display: none !important;*/
+ 
 }
 
+/* instructions */
+.instructions{
+	     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98;wmst */
+background: #1b1f4e; /* Old browsers */
+background: -moz-linear-gradient(left,  #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719',GradientType=1 ); /* IE6-9 */
+width: 780px;
+height: 50px;
+padding: 10px;
+position: relative;
+top: -500px;
+z-index: 50;
+}
 
 /* header bar */
 
 .header {
     background: #222222;
     width: 800px;
-    height: 30px;
+    height: 31px;
     font-family: sans-serif;
-    position: absolute;
     color: #f1f1f1;
     z-index: 60;
+    position: relative;
+    top: -500px;
 }
 
 .titles{
@@ -127,21 +154,16 @@ body {
 }
 
 /* button for marker text */
-
-.tl-timemarker-content-container {
-    background: #393F7D !important;
+/* marker area */
+.tl-timemarker-content-container{
+   
     color: #ffffff !important;
-    font-size: 20px !important;
+    font-size: 24px !important;
 }
 
 /* color of selected markers and timeline background bar */
-.tl-timemarker.tl-timemarker-active, .tl-timeaxis-background {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98;wmst */
-background: #1b1f4e; /* Old browsers */
-background: -moz-linear-gradient(left,  #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719',GradientType=1 ); /* IE6-9 */
+.tl-timemarker-content-container.tl-timemarker-active{
+
 color: #ffffff !important;
 font-size: 16px !important;
 }
@@ -155,8 +177,9 @@ font-size: 16px !important;
 }
 
 /* date heading */
-.tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date, .tl-timemarker-timespan{
 	font-size: 24px !important;
+	color: #ffffff !important;
 }
 
 /* nav bar timeline */
@@ -183,4 +206,15 @@ background: #ED5901;
 /* Slide title */
 .tl-medium .tl-text h2.tl-headline-title, .tl-medium .tl-text h2.tl-headline{
 /* color: #1B1F4E !important; */
+}
+
+/* slide cover */
+.tl-slide .tl-slide-background{
+opacity: 0.2 !important;
+	     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98;wmst */
+background: #1b1f4e; /* Old browsers */
+background: -moz-linear-gradient(left,  #1b1f4e 21%, #393f7d 38%, #aa0ce9 55%, #d4001d 71%, #ed5901 85%, #ef9719 98%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #1b1f4e 21%,#393f7d 38%,#aa0ce9 55%,#d4001d 71%,#ed5901 85%,#ef9719 98%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1f4e', endColorstr='#ef9719',GradientType=1 ) !important; /* IE6-9 */
 }

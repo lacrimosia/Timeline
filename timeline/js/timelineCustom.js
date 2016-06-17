@@ -7,8 +7,8 @@ var voiceRate = 0.9; // voice rate for the audio
 var enabled = false; // hide intro screen
 var disableKey = true; // disable keyboard until intro screen is hidden
 var sound = true; // Toggle sound on and off from button and keyboard
-var soundOn = "<i class='fa fa-volume-up'></i>"; // change to sound on icon
-var soundOff = "<i class='fa fa-volume-off'></i>"; // change to sound off icon
+var soundOn = "<i class='fa fa-volume-up'></i> ON"; // change to sound on icon
+var soundOff = "<i class='fa fa-volume-off'></i> OFF"; // change to sound off icon
 var showHelp = false; // show help when clicked or key is pressed
 var openHelp = false; // whether help menu is open or closed
 
