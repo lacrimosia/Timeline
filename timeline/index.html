@@ -21,7 +21,7 @@
     <script src="js/TimelineJS3/compiled/js/timeline.js"></script>
     <script>
     var options = {
-        initial_zoom: 500
+        initial_zoom: 2
     };
     var timeline = new TL.Timeline('timeline-div',
         'js/timelineData.json', options);
@@ -31,6 +31,7 @@
             <h5>Who is Susie Phipps? - Interactive Timeline</h5>
         </div>
         <div class="menu">
+            <button class="grayscale btn" title="Grayscale"><i class="fa fa-volume-off"></i> Grayscale</button>
             <button class="sound btn" title="Sound"><i class="fa fa-volume-off"></i> OFF</button>
             <!--sound-->
             <button class="reload btn" title="Reload"><i class="fa fa-refresh"></i> Reload</button>
@@ -72,6 +73,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/tinycolor.js"></script>
     <script src="js/responsive-voice.js"></script>
     <script src="js/timelineCustom.js"></script>
 </body>

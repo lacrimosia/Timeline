@@ -90,6 +90,18 @@ $('.sound').click(function() {
     changeSoundIcon();
 });
 
+// grayscale
+/*$('.grayscale').click(function(){
+    var buttonColor = tinycolor("rgb(234,0,31)").desaturate(100).toString();
+    $('.btn').css({
+        'background-color': buttonColor
+    });
+
+    $('.btn').css({
+        'background-color': buttonColor
+    });
+    console.log('grayscale', buttonColor);
+});*/
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
