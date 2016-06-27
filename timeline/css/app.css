@@ -45,6 +45,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751b1f4e', e
 
 }
 
+
+/* slide title text */
+.tl-headline.tl-headline-title{
+	font-size: 24px !important;
+}
+
 .help_Button {
     opacity: 1 !important;
     position: relative;
