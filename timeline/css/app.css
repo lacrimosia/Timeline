@@ -45,6 +45,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751b1f4e', e
 
 }
 
+.tl-timeline p{
+	font-size: 13px !important;
+}
 
 /* slide title text */
 .tl-headline.tl-headline-title{
