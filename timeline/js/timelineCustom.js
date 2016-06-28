@@ -31,18 +31,15 @@ $(document).bind('keyup', function(e) {
         //right arrow key - go to next slide
         timeline.goToNext(); // go to next slide
         getCount(); // get current slide
-        read(); // enable speech
     } else if (key == 37 && disableKey == false) {
         //left arrow key - go to previous slide
         timeline.goToPrev(); // go to previous slide
         getCount(); // get current slide
-        read(); // enable speech
 
     } else if (key == 82) {
         location.reload(); //reload app - r key
     } else if (key == 83) {
         intro(); //Start App - s key
-        read();
         $('.sound').html(soundOn); // init icon 
     } else if (key == 65 && disableKey == false) {
         // A key - toggle Sound
@@ -64,7 +61,6 @@ $(document).bind('keyup', function(e) {
 // start sound on intro
 $('.help_Button').click(function() {
     intro(); //Start App - s key
-    read();
     $('.sound').html(soundOn); // init icon 
 });
 
@@ -105,53 +101,26 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-    getCount();
-    read();
+   getCount();
 });
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-    getCount();
-    read();
+  getCount();
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-    getCount();
-    read(getCount());
+  // getCount();
 });
 
 function intro() {
     $('.help_Menu').hide();
-    read();
+  //  readIntro();
     enabled = true;
     disableKey = false;
 }
 
-// get the slide id 
-// check for the active==true
-// return the slide index from id
-// use this to retrieve text data for audio
-function getCount() {
-    var listing = timeline._storyslider._slides;
-    for (var x = 0; x < listing.length; x++) {
-        if (listing[x].active == true) {
-            current = x;
-        }
-    }
-    console.log('current', current);
-    return current;
-}
-
-
-function read(count) {
-    if (count == 0 && disableKey == false && sound == true) {
-        responsiveVoice.speak(timeline.getData(count).text.headline + timeline.getData(count).text.text, voiceType, { rate: voiceRate });
-    } else if (sound == true && count != 0) {
-        responsiveVoice.speak(timeline.getData(count).text.headline + 'In ' + timeline.getData(count).start_date.data.year + "," + timeline.getData(count).text.text, voiceType, { rate: voiceRate });
-    }
-
-}
 
 function toggleSound() {
     // turn sound on/off with keystroke
@@ -160,7 +129,7 @@ function toggleSound() {
     if (sound == false) {
         responsiveVoice.cancel();
     } else {
-        read();
+
     }
    // console.log('toggleSound()', sound);
     return sound;
@@ -181,5 +150,4 @@ function showHelpMenu() {
 
 function closeHelpMenu() {
     $('.help_Menu').hide();
-    read();
 }
