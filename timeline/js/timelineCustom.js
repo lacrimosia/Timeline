@@ -118,7 +118,7 @@ timeline.on("nav_previous", function(data) {
 // read on slide change
 timeline.on("change", function(data) {
     getCount();
-    read();
+    read(getCount());
 });
 
 function intro() {
@@ -137,18 +137,18 @@ function getCount() {
     for (var x = 0; x < listing.length; x++) {
         if (listing[x].active == true) {
             current = x;
-            console.log('current', current);
         }
     }
+    console.log('current', current);
     return current;
 }
 
 
-function read() {
-    if (getCount() == 0 && disableKey == false && sound == true) {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
-    } else if (sound == true && getCount() != 0) {
-        responsiveVoice.speak(timeline.getData(getCount()).text.headline + 'In ' + timeline.getData(getCount()).start_date.data.year + "," + timeline.getData(getCount()).text.text, voiceType, { rate: voiceRate });
+function read(count) {
+    if (count == 0 && disableKey == false && sound == true) {
+        responsiveVoice.speak(timeline.getData(count).text.headline + timeline.getData(count).text.text, voiceType, { rate: voiceRate });
+    } else if (sound == true && count != 0) {
+        responsiveVoice.speak(timeline.getData(count).text.headline + 'In ' + timeline.getData(count).start_date.data.year + "," + timeline.getData(count).text.text, voiceType, { rate: voiceRate });
     }
 
 }
@@ -162,7 +162,7 @@ function toggleSound() {
     } else {
         read();
     }
-    console.log('toggleSound()', sound);
+   // console.log('toggleSound()', sound);
     return sound;
 }
 
