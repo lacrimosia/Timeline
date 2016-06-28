@@ -30,11 +30,11 @@ $(document).bind('keyup', function(e) {
     if (key == 39 && disableKey == false) {
         //right arrow key - go to next slide
         timeline.goToNext(); // go to next slide
-        getCount(); // get current slide
+
     } else if (key == 37 && disableKey == false) {
         //left arrow key - go to previous slide
         timeline.goToPrev(); // go to previous slide
-        getCount(); // get current slide
+
 
     } else if (key == 82) {
         location.reload(); //reload app - r key
@@ -101,17 +101,17 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-   getCount();
+
 });
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-  getCount();
+
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-  // getCount();
+
 });
 
 function intro() {
