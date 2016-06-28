@@ -2,7 +2,7 @@
 // 6/2016
 
 var current = 0; // set the current to first slide
-var voiceType = "UK English Male"; // Male voice for audio
+var voiceType = "US English Female"; // Male voice for audio
 var voiceRate = 0.9; // voice rate for the audio
 var enabled = false; // hide intro screen
 var disableKey = true; // disable keyboard until intro screen is hidden
