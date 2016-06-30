@@ -16,7 +16,7 @@ body {
     top: 0px;
     left: 0px;
     width: 800px;
-    height: 600px;
+    height: 700px;
    /* background: rgba(0, 0, 0, 0.6); */
     z-index: 100000;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1f4e+21,393f7d+38,aa0ce9+55,d4001d+71,ed5901+85,ef9719+98&0.46+0,0.5+100;wmst2 */
@@ -57,7 +57,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751b1f4e', e
 .help_Button {
     opacity: 1 !important;
     position: relative;
-    top: -5px;
+    top: 11px;
     left: 396px;
     width: 250px;
     height: 75px;
@@ -78,7 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea001f', end
 
 .keyboard_Div{
 	position: relative;
-	top: 108px;
+	top: 150px;
 	left: 62px;
 	width: 650px;
 	height: 360px;
@@ -165,7 +165,7 @@ width: 780px;
 height: 50px;
 padding: 10px;
 position: relative;
-top: -500px;
+top: -600px;
 z-index: 50;
 }
 
@@ -186,7 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', end
     color: #f1f1f1;
     z-index: 60;
     position: relative;
-    top: -500px;
+    top: -600px;
 }
 
 .titles{

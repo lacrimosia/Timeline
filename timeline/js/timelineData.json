@@ -1,144 +1,139 @@
 {
-    "title": {
-        "media": {
-          "url": "./images/phipps.jpg",
-          "caption": "",
-          "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>",
-          "thumbnail": "./images/phipps.jpg"
-        },
-        "text": {
-          "title": "Susie Phipps",
-          "headline": "When does the codification of race as a category of identity begin?",
-          "text": "The U.S. government began keeping official records of racial classifications in the late 18th century. The first U.S. Census happened in 1790, not so coincidentally the same year that Congress passed the Naturalization Act, which restricted the right of adopted citizenship to \"FREE WHITE\" people only."
-        },
-        "background": {
-          "url": "./images/historic.jpg"
-        }
-    },
     "events": [
       {
         "media": {
-          "url": "./images/mixed-race.png",
-          "credit": "Credits: Gnostic Warrior/ <a href='http://gnosticwarrior.com/wp-content/uploads/2015/03/Mixed-Races-2.png'>Image</a>",
-          "thumbnail": "./images/mixed-race.png"
+            "url": "./images/phipps.jpg",
+            "caption": "",
+            "credit": "Credits: 1nedrop.com/ <a href='http://1nedrop.com/wp-content/uploads/2011/10/Susie-Guillory-Phipps2.jpg'>Image</a>",
+            "thumbnail": "./images/phipps.jpg"
         },
         "start_date": {
-          "year": "1970"
+            "year": "1790"
         },
         "text": {
-          "headline": "Hypo-descent law",
-          "text": "Louisiana Hypo-descent law passes, which is based on colonial era \"ONE DROP RULE\" in which anyone with 1/32 or more African ancestry is considered \"BLACK.\""
+            "title": "Origins of US Racial Classifications",
+            "headline": "When does the codification of race as a category of identity begin?",
+            "text": "The U.S. government began keeping official records of racial classifications in the late 18th century. The first U.S. Census happened in 1790, not so coincidentally the same year that Congress passed the Naturalization Act, which restricted the right of adopted citizenship to \"FREE WHITE\" people only. These historical facts set the context leading to Susie Phipps' legal challenge to change her racial classification."
         },
         "background": {
-          "url": "./images/mixed-race.png"
+            "url": "./images/historic.jpg"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "./images/passport.jpg",
-          "caption": "",
-          "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>",
-          "thumbnail": "./images/passport.jpg"
+            "url": "./images/mixed-race.png",
+            "credit": "Credits: Gnostic Warrior/ <a href='http://gnosticwarrior.com/wp-content/uploads/2015/03/Mixed-Races-2.png'>Image</a>",
+            "thumbnail": "./images/mixed-race.png"
         },
         "start_date": {
-          "year": "1977"
+            "year": "1970"
         },
         "text": {
-          "headline": "Passport Denied",
-          "text": "Phipps checks \"WHITE\" on her passport application, and she was then denied a passport because her birth certificate indicated \"COLORED\" for one of her parents."
+            "headline": "Hypo-descent law",
+            "text": "Louisiana Hypo-descent law passes, which is based on colonial era \"ONE DROP RULE\" in which anyone with 1/32 or more African ancestry is considered \"BLACK.\""
         },
-        "background":{
-          "url": "./images/passport.jpg"
+        "background": {
+            "url": "./images/mixed-race.png"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg",
-          "credit": "Credits: <a href=\"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg\">Image</a>",
-          "thumbnail": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
+            "url": "./images/passport.jpg",
+            "caption": "",
+            "credit": "Credits: Takomaparkmd <a href=\"https://takomaparkmd.gov/wp-content/uploads/2015/05/content-passport.jpg\">Source Here</a>",
+            "thumbnail": "./images/passport.jpg"
         },
         "start_date": {
-          "year": "1982"
+            "year": "1977"
+        },
+        "text": {
+            "headline": "Passport Denied",
+            "text": "Phipps checks \"WHITE\" on her passport application, and she was then denied a passport because her birth certificate indicated \"COLORED\" for one of her parents."
+        },
+        "background": {
+            "url": "./images/passport.jpg"
+        }
+    }, {
+        "media": {
+            "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg",
+            "credit": "Credits: <a href=\"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg\">Image</a>",
+            "thumbnail": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
+        },
+        "start_date": {
+            "year": "1982"
         },
         "end_date": {
-          "year": "1983"
+            "year": "1983"
         },
         "text": {
-          "headline": "Racial Classification",
-          "text": "Susie Phipps decided to sue to challenge her racial classification as something other than \"WHITE.\" A Tulane professor studying the case states that most whites have 1/20 African-American blood."
+            "headline": "Racial Classification",
+            "text": "Susie Phipps decided to sue to challenge her racial classification as something other than \"WHITE.\" A Tulane professor studying the case states that most whites have 1/20 African-American blood."
         },
-        "background":{
-          "url":"http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
+        "background": {
+            "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg",
-          "credit": "Credits: <a href=\"http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg\">Image</a>",
-          "thumbnail": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
+            "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg",
+            "credit": "Credits: <a href=\"http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg\">Image</a>",
+            "thumbnail": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
         },
         "start_date": {
-          "year": "1983"
+            "year": "1983"
         },
         "text": {
-          "headline": "The Great Discovery",
-          "text": "Phipps's great-great-great-great grandmother [Margarita] was revealed to have been a slave. In a 1983 interview, Phipps was quoted that she came to believe that \"Margarita had been DARK rather than BLACK.\""
+            "headline": "The Great Discovery",
+            "text": "Phipps's great-great-great-great grandmother [Margarita] was revealed to have been a slave. In a 1983 interview, Phipps was quoted that she came to believe that \"Margarita had been DARK rather than BLACK.\""
         },
-        "background":{
-          "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
+        "background": {
+            "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "./images/speak-up.jpg",
-          "credit": "Credits: Dailycal/ <a href=\"http://www.dailycal.org/2014/10/02/upholding-fsm-legacy-guide/\">Image</a>",
-          "thumbnail": "./images/speak-up.jpg"
+            "url": "./images/speak-up.jpg",
+            "credit": "Credits: Dailycal/ <a href=\"http://www.dailycal.org/2014/10/02/upholding-fsm-legacy-guide/\">Image</a>",
+            "thumbnail": "./images/speak-up.jpg"
 
         },
         "start_date": {
-          "year": "1983"
+            "year": "1983"
         },
         "text": {
-          "headline": "Standing for your beliefs",
-          "text": "Phipps claimed she held no grudge against BLACK people and rather she only stood up for what she believed: she was WHITE. If her birth certificate didn't get corrected, descendants might misunderstand their own racial lineage."
+            "headline": "Standing for your beliefs",
+            "text": "Phipps claimed she held no grudge against BLACK people and rather she only stood up for what she believed: she was WHITE. If her birth certificate didn't get corrected, descendants might misunderstand their own racial lineage."
         },
         "background": {
-          "url": "./images/speak-up.jpg"
+            "url": "./images/speak-up.jpg"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "./images/testify.png",
-          "credit": "Credits: JTB Law Firm <a href=\"http://jtblawfirm.com/the-difference/\">Image</a>",
-          "thumbnail": "./images/testify.png"
+            "url": "./images/testify.png",
+            "credit": "Credits: JTB Law Firm <a href=\"http://jtblawfirm.com/the-difference/\">Image</a>",
+            "thumbnail": "./images/testify.png"
         },
         "start_date": {
-          "year": "1985"
+            "year": "1985"
         },
         "text": {
-          "headline": "Phipps goes to trial",
-          "text": "Phipps testifies that \"this classification came as a shock, since she had always thought she was WHITE, had lived as WHITE, had twice married as WHITE.\""
+            "headline": "Phipps goes to trial",
+            "text": "Phipps testifies that \"this classification came as a shock, since she had always thought she was WHITE, had lived as WHITE, had twice married as WHITE.\""
         },
         "background": {
-          "url": "./images/testify.png"
+            "url": "./images/testify.png"
         }
-      },
-      {
+    }, {
         "media": {
-          "url": "./images/supreme.jpg",
-          "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>",
-          "thumbnail": "./images/supreme.jpg"
+            "url": "./images/supreme.jpg",
+            "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>",
+            "thumbnail": "./images/supreme.jpg"
         },
         "start_date": {
-          "year": "1986"
+            "year": "1986"
         },
         "text": {
-          "headline": "US Supreme court case refusal",
-          "text": "U.S. Supreme Court upholds the decision to refuse to hear a case exposing Louisiana's racial classification criteria."
+            "headline": "US Supreme court case refusal",
+            "text": "U.S. Supreme Court upholds the decision to refuse to hear a case exposing Louisiana's racial classification criteria."
         },
         "background": {
-          "url": "./images/supreme.jpg"
+            "url": "./images/supreme.jpg"
         }
-      }
-    ]
+    }]
 }
