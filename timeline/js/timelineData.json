@@ -13,7 +13,7 @@
         "text": {
             "title": "Origins of US Racial Classifications",
             "headline": "When does the codification of race as a category of identity begin?",
-            "text": "The U.S. government began keeping official records of racial classifications in the late 18th century. The first U.S. Census happened in 1790, not so coincidentally the same year that Congress passed the Naturalization Act, which restricted the right of adopted citizenship to \"FREE WHITE\" people only. These historical facts set the context leading to Susie Phipps' legal challenge to change her racial classification."
+            "text": "The U.S. government began keeping official records of racial classifications in the late 18th century. The first U.S. Census happened in 1790, not so coincidentally the same year that Congress passed the Naturalization Act, which restricted the right of adopted citizenship to \"Free White\" people only. These historical facts set the context leading to Susie Phipps' legal challenge to change her racial classification."
         },
         "background": {
             "url": "./images/historic.jpg"
@@ -28,8 +28,8 @@
             "year": "1970"
         },
         "text": {
-            "headline": "Hypo-descent law",
-            "text": "Louisiana Hypo-descent law passes, which is based on colonial era \"ONE DROP RULE\" in which anyone with 1/32 or more African ancestry is considered \"BLACK.\""
+            "headline": "Hypo-descent Law",
+            "text": "In the State of Louisiana, a hypo-descent law passes. This law is based on the Colonial Era \"one-drop rule,\" in which anyone with \"a trace of Black ancestry\" was declared Black. In Louisiana, the court specified that anyone with 1/32 nd or more African ancestry is considered Black."
         },
         "background": {
             "url": "./images/mixed-race.png"
@@ -46,7 +46,7 @@
         },
         "text": {
             "headline": "Passport Denied",
-            "text": "Phipps checks \"WHITE\" on her passport application, and she was then denied a passport because her birth certificate indicated \"COLORED\" for one of her parents."
+            "text": "At age 43, Phipps attempts to get a passport and is denied. Phipps checked \"White\" on her application, however this racial classification is inconsistent with her birth certificate, which indicates that her race is \"Black\" and the race of one her parents is \"Colored.\""
         },
         "background": {
             "url": "./images/passport.jpg"
@@ -58,14 +58,14 @@
             "thumbnail": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
         },
         "start_date": {
-            "year": "1982"
+            "year": "1977"
         },
         "end_date": {
             "year": "1983"
         },
         "text": {
-            "headline": "Racial Classification",
-            "text": "Susie Phipps decided to sue to challenge her racial classification as something other than \"WHITE.\" A Tulane professor studying the case states that most whites have 1/20 African-American blood."
+            "headline": "Pursuing a Legal Route",
+            "text": "Phipps unsuccessfully sues the Louisiana Bureau of Vital Records to change her classification from \"Black\" to \"White.\" During the trial, a Tulane University professor testifies on her behalf that most Whites have 1/20 th African ancestry."
         },
         "background": {
             "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
@@ -80,8 +80,8 @@
             "year": "1983"
         },
         "text": {
-            "headline": "The Great Discovery",
-            "text": "Phipps's great-great-great-great grandmother [Margarita] was revealed to have been a slave. In a 1983 interview, Phipps was quoted that she came to believe that \"Margarita had been DARK rather than BLACK.\""
+            "headline": "Racial Lineage",
+            "text": "Phipps's great-great-great-great grandmother [Margarita] was revealed to have been a slave. In a 1983 interview, Phipps was quoted that she came to believe that \"Margarita had been dARK rather than Black.\""
         },
         "background": {
             "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
@@ -97,8 +97,8 @@
             "year": "1983"
         },
         "text": {
-            "headline": "Standing for your beliefs",
-            "text": "Phipps claimed she held no grudge against BLACK people and rather she only stood up for what she believed: she was WHITE. If her birth certificate didn't get corrected, descendants might misunderstand their own racial lineage."
+            "headline": "Racial Complexities",
+            "text": "Upon learning about her racial classification, Phipps reported to have been \"sick for three days.\" Phipps claims she held no grudge against Blacks, and she was only standing up for what she believed: she was White."
         },
         "background": {
             "url": "./images/speak-up.jpg"
@@ -112,28 +112,15 @@
         "start_date": {
             "year": "1985"
         },
-        "text": {
-            "headline": "Phipps goes to trial",
-            "text": "Phipps testifies that \"this classification came as a shock, since she had always thought she was WHITE, had lived as WHITE, had twice married as WHITE.\""
-        },
-        "background": {
-            "url": "./images/testify.png"
-        }
-    }, {
-        "media": {
-            "url": "./images/supreme.jpg",
-            "credit": "Credits: Business builders Club/ <a href=\"http://www.businessbuildersclub.org/file/2015/03/Judge-Gavel.jpg\">Image</a>",
-            "thumbnail": "./images/supreme.jpg"
-        },
-        "start_date": {
+        "end_date": {
             "year": "1986"
         },
         "text": {
-            "headline": "US Supreme court case refusal",
-            "text": "U.S. Supreme Court upholds the decision to refuse to hear a case exposing Louisiana's racial classification criteria."
+            "headline": "US Supreme Court Appeals",
+            "text": "The Louisiana 1/32 nd statute was abolished in 1983, and a \"traceable amount\" statute replaced it, leaving Phipps still unable to change her racial classification. Phipps appealed to the US Supreme Court twice. Both appeals were unsuccessful and the court has since upheld the law by its \"traceable amount\" criteria."
         },
         "background": {
-            "url": "./images/supreme.jpg"
+            "url": "./images/testify.png"
         }
     }]
 }
