@@ -11,6 +11,7 @@ var soundOn = "<i class='fa fa-volume-up'></i> ON"; // change to sound on icon
 var soundOff = "<i class='fa fa-volume-off'></i> OFF"; // change to sound off icon
 var showHelp = false; // show help when clicked or key is pressed
 var openHelp = false; // whether help menu is open or closed
+var playing = true; //checks if sound is playing
 
 
 // init
@@ -53,7 +54,7 @@ $(document).bind('keyup', function(e) {
         if (openHelp == true) {
             showHelpMenu();
             $('.help_Button').html("Close <i class='fa fa-times'></i>");
-        }else{
+        } else {
             closeHelpMenu();
         }
     }
@@ -109,39 +110,63 @@ timeline.on("nav_next", function(data) {
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
+    //  getSlideIndex();
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-
+  //  playing = false;
 });
 
 function intro() {
     $('.help_Menu').hide();
-  //  readIntro();
+    //  readIntro();
     enabled = true;
     disableKey = false;
 }
 
-function soundPlay(num){
-    // loading audio
-        var mySound = new buzz.sound("./audio/Phipps_0"+(num + parseInt(1))+".mp3");
-        mySound.play();
-}
+// getSlideIndex();
 
-getSlideIndex();
-var slideArray = timeline._storyslider._slides;
-function getSlideIndex(){ 
-  // console.log(timeline.getCurrentSlide());
- var indexes = slideArray.map(function(obj, index) {
-    if(obj.active == true) {
-        console.log(index);
-        soundPlay(index);
-        return index;
+// sound files
+var audio = [{
+    "soundfile": "./audio/Phipps_0.mp3"
+}, {
+    "soundfile": "./audio/Phipps_1.mp3"
+}, {
+    "soundfile": "./audio/Phipps_2.mp3"
+}, {
+    "soundfile": "./audio/Phipps_3.mp3"
+}, {
+    "soundfile": "./audio/Phipps_4.mp3"
+}, {
+    "soundfile": "./audio/Phipps_5.mp3"
+}, {
+    "soundfile": "./audio/Phipps_6.mp3"
+}];
+
+function getSlideIndex() {
+    var slideArray = timeline._storyslider._slides;
+    // console.log(timeline.getCurrentSlide());
+    for (var s = 0; s < slideArray.length; s++) {
+        var mySound = new buzz.sound(audio[s].soundfile);
+        if (slideArray[s].active == true) {
+          //  playing = true;
+          //  mySound.play();
+            console.log("is active", slideArray[s].active);
+            console.log("current", s);
+            for (var i in buzz.sounds) {
+                if(i != s){
+                    buzz.sounds[i].mute();
+                }else{
+                    buzz.sounds[s].play();
+                }
+            }
+        }
+
+
     }
-}).filter(isFinite);
+    return s;
 }
-
 
 function toggleSound() {
     // turn sound on/off with keystroke
@@ -152,7 +177,7 @@ function toggleSound() {
     } else {
 
     }
-   // console.log('toggleSound()', sound);
+    // console.log('toggleSound()', sound);
     return sound;
 }
 
