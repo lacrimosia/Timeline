@@ -130,8 +130,8 @@ function soundPlay(num){
 }
 
 getSlideIndex();
-function getSlideIndex(){
-  var slideArray = timeline._storyslider._slides;
+var slideArray = timeline._storyslider._slides;
+function getSlideIndex(){ 
   // console.log(timeline.getCurrentSlide());
  var indexes = slideArray.map(function(obj, index) {
     if(obj.active == true) {
