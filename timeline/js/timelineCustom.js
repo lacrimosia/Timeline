@@ -12,6 +12,7 @@ var soundOff = "<i class='fa fa-volume-off'></i> OFF"; // change to sound off ic
 var showHelp = false; // show help when clicked or key is pressed
 var openHelp = false; // whether help menu is open or closed
 
+
 // init
 init();
 
@@ -101,12 +102,13 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-
+    getSlideIndex();
 });
+
+
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-
 });
 
 // read on slide change
@@ -121,13 +123,32 @@ function intro() {
     disableKey = false;
 }
 
+function soundPlay(num){
+    // loading audio
+        var mySound = new buzz.sound("./audio/Phipps_0"+(num + parseInt(1))+".mp3");
+        mySound.play();
+}
+
+getSlideIndex();
+function getSlideIndex(){
+  var slideArray = timeline._storyslider._slides;
+  // console.log(timeline.getCurrentSlide());
+ var indexes = slideArray.map(function(obj, index) {
+    if(obj.active == true) {
+        console.log(index);
+        soundPlay(index);
+        return index;
+    }
+}).filter(isFinite);
+}
+
 
 function toggleSound() {
     // turn sound on/off with keystroke
     // check if sound is playing and turn ona
     sound = !sound; //toggle sound state
     if (sound == false) {
-        responsiveVoice.cancel();
+
     } else {
 
     }
@@ -145,7 +166,6 @@ function init() {
 
 function showHelpMenu() {
     $('.help_Menu').show();
-    responsiveVoice.cancel();
 }
 
 function closeHelpMenu() {
