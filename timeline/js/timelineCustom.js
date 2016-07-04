@@ -106,16 +106,15 @@ timeline.on("nav_next", function(data) {
     getSlideIndex();
 });
 
-
-
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-    //  getSlideIndex();
+    getSlideIndex();
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-  //  playing = false;
+    //  playing = false;
+    // getSlideIndex();
 });
 
 function intro() {
@@ -123,50 +122,35 @@ function intro() {
     //  readIntro();
     enabled = true;
     disableKey = false;
+    getSlideIndex();
 }
 
-// getSlideIndex();
-
-// sound files
-var audio = [{
-    "soundfile": "./audio/Phipps_0.mp3"
-}, {
-    "soundfile": "./audio/Phipps_1.mp3"
-}, {
-    "soundfile": "./audio/Phipps_2.mp3"
-}, {
-    "soundfile": "./audio/Phipps_3.mp3"
-}, {
-    "soundfile": "./audio/Phipps_4.mp3"
-}, {
-    "soundfile": "./audio/Phipps_5.mp3"
-}, {
-    "soundfile": "./audio/Phipps_6.mp3"
-}];
 
 function getSlideIndex() {
+
+    // slide array
     var slideArray = timeline._storyslider._slides;
-    // console.log(timeline.getCurrentSlide());
-    for (var s = 0; s < slideArray.length; s++) {
-        var mySound = new buzz.sound(audio[s].soundfile);
-        if (slideArray[s].active == true) {
-          //  playing = true;
-          //  mySound.play();
-            console.log("is active", slideArray[s].active);
-            console.log("current", s);
-            for (var i in buzz.sounds) {
-                if(i != s){
-                    buzz.sounds[i].mute();
-                }else{
-                    buzz.sounds[s].play();
-                }
-            }
-        }
 
+    // return current slide number
+    var current = _.findIndex(slideArray, function(o) {
+        return o.active == true;
+    });
 
+    // checks to see if active is true
+    if (slideArray[current].active === true) {
+        var mySound = new buzz.sound(slideArray[current].data.audio.sound);
+        var isPlaying = slideArray[current].data.audio.playing;
+        isPlaying = !isPlaying;
+        console.log("isPlaying t", isPlaying);
+        // plays the current mp3
+        buzz.sounds[current].play();
+    } else {
+        isPlaying = !isPlaying;
+        console.log("isPlaying f", isPlaying);
+        buzz.sounds[current].mute();
     }
-    return s;
 }
+
 
 function toggleSound() {
     // turn sound on/off with keystroke

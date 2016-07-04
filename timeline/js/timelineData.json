@@ -17,6 +17,10 @@
         },
         "background": {
             "url": "./images/historic.jpg"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_0.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -33,6 +37,10 @@
         },
         "background": {
             "url": "./images/mixed-race.png"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_1.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -50,6 +58,10 @@
         },
         "background": {
             "url": "./images/passport.jpg"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_2.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -69,6 +81,10 @@
         },
         "background": {
             "url": "http://www.museumofman.org/wp-content/uploads/Race-OpeningPostcard-v3-Front.jpg"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_3.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -85,6 +101,10 @@
         },
         "background": {
             "url": "http://www.haaretz.com/polopoly_fs/1.626178.1415856121!/image/2373819561.jpg_gen/derivatives/headline_609x343/2373819561.jpg"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_4.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -102,6 +122,10 @@
         },
         "background": {
             "url": "./images/speak-up.jpg"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_5.mp3",
+            "playing": false
         }
     }, {
         "media": {
@@ -121,6 +145,10 @@
         },
         "background": {
             "url": "./images/testify.png"
+        },
+        "audio": {
+            "sound": "./audio/Phipps_6.mp3",
+            "playing": false
         }
     }]
 }
