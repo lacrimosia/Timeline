@@ -12,6 +12,7 @@ var soundOff = "<i class='fa fa-volume-off'></i> OFF"; // change to sound off ic
 var showHelp = false; // show help when clicked or key is pressed
 var openHelp = false; // whether help menu is open or closed
 var playing = true; //checks if sound is playing
+var sounds = [];
 
 
 // init
@@ -103,18 +104,17 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-    getSlideIndex();
+    playNextSound(getSlideIndex());
 });
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-    getSlideIndex();
+
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-    //  playing = false;
-    // getSlideIndex();
+
 });
 
 function intro() {
@@ -122,35 +122,42 @@ function intro() {
     //  readIntro();
     enabled = true;
     disableKey = false;
-    getSlideIndex();
 }
 
 
 function getSlideIndex() {
-
     // slide array
     var slideArray = timeline._storyslider._slides;
-
     // return current slide number
     var current = _.findIndex(slideArray, function(o) {
         return o.active == true;
     });
-
     // checks to see if active is true
     if (slideArray[current].active === true) {
-        var mySound = new buzz.sound(slideArray[current].data.audio.sound);
-        var isPlaying = slideArray[current].data.audio.playing;
-        isPlaying = !isPlaying;
-        console.log("isPlaying t", isPlaying);
-        // plays the current mp3
-        buzz.sounds[current].play();
-    } else {
-        isPlaying = !isPlaying;
-        console.log("isPlaying f", isPlaying);
-        buzz.sounds[current].mute();
+        return current;
     }
 }
 
+function playNextSound(slide) {
+    var slideArray = timeline._storyslider._slides;
+
+    for (var s in slideArray) {
+        // store all audio files
+        sounds[s] = new buzz.sound(slideArray[s].data.audio.sound);
+    }
+
+    if(slide == 1){
+       sounds[1].play(); 
+       sounds[0].mute(); 
+       sounds[2].mute(); 
+       sounds[3].mute(); 
+    }else if(slide == 2){
+        sounds[2].play();
+        sounds[0].mute(); 
+       sounds[1].mute(); 
+       sounds[3].mute();
+    }
+}
 
 function toggleSound() {
     // turn sound on/off with keystroke
@@ -171,6 +178,7 @@ function changeSoundIcon() {
 
 function init() {
     // $('.help_Menu').hide();
+    // playSound(getSlideIndex());
 }
 
 function showHelpMenu() {
