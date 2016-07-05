@@ -18,6 +18,11 @@ var sounds = [];
 // init
 init();
 
+function init() {
+    // $('.help_Menu').hide();
+    
+}
+
 // information from timeline slides data 
 //  count += 1;
 
@@ -104,7 +109,7 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-    playNextSound(getSlideIndex());
+
 });
 
 // read when user clicks previous
@@ -132,54 +137,41 @@ function getSlideIndex() {
     var current = _.findIndex(slideArray, function(o) {
         return o.active == true;
     });
-    // checks to see if active is true
-    if (slideArray[current].active === true) {
-        return current;
-    }
+    
+    console.log('current', current);
+    return current;
 }
 
-function playNextSound(slide) {
+function playSound(current){
     var slideArray = timeline._storyslider._slides;
+    var sound = new buzz.sound(slideArray[current].data.audio.sound);
+    sound.play();
+}
 
-    for (var s in slideArray) {
-        // store all audio files
-        sounds[s] = new buzz.sound(slideArray[s].data.audio.sound);
-    }
-
-    if(slide == 1){
-       sounds[1].play(); 
-       sounds[0].mute(); 
-       sounds[2].mute(); 
-       sounds[3].mute(); 
-    }else if(slide == 2){
-        sounds[2].play();
-        sounds[0].mute(); 
-       sounds[1].mute(); 
-       sounds[3].mute();
+function stopSound(current){
+    for(var i in buzz.sounds){
+        buzz.sounds[i].mute();
     }
 }
+
 
 function toggleSound() {
     // turn sound on/off with keystroke
     // check if sound is playing and turn ona
     sound = !sound; //toggle sound state
     if (sound == false) {
-
+        playSound(getSlideIndex());
     } else {
-
+        stopSound(getSlideIndex());
     }
     // console.log('toggleSound()', sound);
     return sound;
 }
 
 function changeSoundIcon() {
-    toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
+    toggleSound() ? $('.sound').html(soundOff) : $('.sound').html(soundOn);
 }
 
-function init() {
-    // $('.help_Menu').hide();
-    // playSound(getSlideIndex());
-}
 
 function showHelpMenu() {
     $('.help_Menu').show();
