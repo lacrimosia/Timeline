@@ -48,7 +48,7 @@ $(document).bind('keyup', function(e) {
         location.reload(); //reload app - r key
     } else if (key == 83) {
         intro(); //Start App - s key
-        $('.sound').html(soundOn); // init icon 
+        $('.sound').html(soundOff); // init icon 
     } else if (key == 65 && disableKey == false) {
         // A key - toggle Sound
         // toggles sound and changes icon based on whether sound is on or off
@@ -109,17 +109,20 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-
+    toggleSound();
+    changeSoundIcon();
 });
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-
+    toggleSound();
+    changeSoundIcon();
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-
+    toggleSound();
+    changeSoundIcon();
 });
 
 function intro() {
@@ -157,9 +160,9 @@ function stopSound(current){
 
 function toggleSound() {
     // turn sound on/off with keystroke
-    // check if sound is playing and turn ona
+    // check if sound is playing and turn on
     sound = !sound; //toggle sound state
-    if (sound == false) {
+    if (sound == false) {       
         playSound(getSlideIndex());
     } else {
         stopSound(getSlideIndex());
@@ -175,6 +178,7 @@ function changeSoundIcon() {
 
 function showHelpMenu() {
     $('.help_Menu').show();
+    toggleSound();
 }
 
 function closeHelpMenu() {
