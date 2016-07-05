@@ -45,6 +45,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751b1f4e', e
 
 }
 
+.sound{
+	position: relative;
+	top: -600px;
+	left: 751px;
+	z-index: 30;
+}
+
 .tl-timeline p{
 	font-size: 13px !important;
 }
