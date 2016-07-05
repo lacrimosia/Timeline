@@ -6,7 +6,7 @@ var voiceType = "US English Female"; // Male voice for audio
 var voiceRate = 0.9; // voice rate for the audio
 var enabled = false; // hide intro screen
 var disableKey = true; // disable keyboard until intro screen is hidden
-var sound = true; // Toggle sound on and off from button and keyboard
+var sound = false; // Toggle sound on and off from button and keyboard
 var soundOn = "<i class='fa fa-volume-up'></i> ON"; // change to sound on icon
 var soundOff = "<i class='fa fa-volume-off'></i> OFF"; // change to sound off icon
 var showHelp = false; // show help when clicked or key is pressed
@@ -20,7 +20,7 @@ init();
 
 function init() {
     // $('.help_Menu').hide();
-    
+
 }
 
 // information from timeline slides data 
@@ -109,20 +109,17 @@ $('.sound').click(function() {
 
 // read when user clicks next
 timeline.on("nav_next", function(data) {
-    toggleSound();
-    changeSoundIcon();
+
 });
 
 // read when user clicks previous
 timeline.on("nav_previous", function(data) {
-    toggleSound();
-    changeSoundIcon();
+
 });
 
 // read on slide change
 timeline.on("change", function(data) {
-    toggleSound();
-    changeSoundIcon();
+
 });
 
 function intro() {
@@ -140,19 +137,19 @@ function getSlideIndex() {
     var current = _.findIndex(slideArray, function(o) {
         return o.active == true;
     });
-    
+
     console.log('current', current);
     return current;
 }
 
-function playSound(current){
+function playSound(current) {
     var slideArray = timeline._storyslider._slides;
     var sound = new buzz.sound(slideArray[current].data.audio.sound);
     sound.play();
 }
 
-function stopSound(current){
-    for(var i in buzz.sounds){
+function stopSound(current) {
+    for (var i in buzz.sounds) {
         buzz.sounds[i].mute();
     }
 }
@@ -162,17 +159,17 @@ function toggleSound() {
     // turn sound on/off with keystroke
     // check if sound is playing and turn on
     sound = !sound; //toggle sound state
-    if (sound == false) {       
-        playSound(getSlideIndex());
-    } else {
+    if (sound == false) {     
         stopSound(getSlideIndex());
+    } else {
+        playSound(getSlideIndex());
     }
     // console.log('toggleSound()', sound);
     return sound;
 }
 
 function changeSoundIcon() {
-    toggleSound() ? $('.sound').html(soundOff) : $('.sound').html(soundOn);
+    toggleSound() ? $('.sound').html(soundOn) : $('.sound').html(soundOff);
 }
 
 
